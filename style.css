@@ -1,0 +1,11 @@
+*{box-sizing:border-box;margin:0}
+body{font-family:Arial,Helvetica,sans-serif;background:#dfe5ee;padding:24px}
+.quadro{background:#f4f3f8;border-radius:6px;padding:24px;max-width:700px;margin:0 auto}
+h1{font-size:1.3rem;margin-bottom:20px}
+.colunas{display:flex;gap:20px}
+.coluna{flex:1;min-height:260px;padding:14px 16px;background:#e0e7f0;border:2px dashed #c3d0df;border-radius:8px;display:flex;flex-direction:column;gap:8px;transition:background .15s,border-color .15s}
+.coluna.sobre{background:#cfdcec;border-color:#2980c4}
+.card{background:#2980c4;color:#fff;font-weight:700;font-size:.9rem;padding:10px 12px;border-radius:4px;cursor:grab;user-select:none}
+.card:active{cursor:grabbing}
+.card.arrastando{opacity:.4}
+@media(max-width:520px){.colunas{flex-direction:column}}
